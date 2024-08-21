@@ -1,0 +1,86 @@
+/* Existing styles remain unchanged */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(170, 225, 170);
+  padding: 25px;
+  border-radius: 100px;
+  margin: 20px;
+}
+
+.navbar-logo {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-logo-image {
+  height: 40px;
+  border-radius: 40px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar h1 {
+  color: #06390a;
+  font-size: 2.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-logo {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar-links {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .navbar-links li {
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar h1 {
+    font-size: 1.8rem;
+  }
+
+  .navbar-links a {
+    font-size: 18px;
+  }
+}

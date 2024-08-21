@@ -1,0 +1,108 @@
+.top-categories {
+  background-color:  #479447;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative; /* Position relative for arrow buttons */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  max-width: 100vw; /* Ensure the container fits within the viewport width */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.top-categories h2 {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 1.7rem; /* Adjust font size if needed */
+}
+
+.top-categories h5{
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 0.8rem; /* Adjust font size if needed */
+}
+.carousel-container {
+  margin-left: 15rem;
+  position: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Hide overflow for slider effect */
+  max-width: 64%; /* Ensure the container fits within the viewport width */
+}
+
+.carousel {
+  display: flex;
+  transition: scroll-left 0.3s ease; /* Smooth sliding effect */
+  white-space: nowrap; /* Ensure items stay in one line */
+  width: 100%; /* Ensure the carousel fits within the container */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.category {
+  background-color: var(--pistachio);
+  padding: 0.5rem; /* Smaller padding */
+  border-radius: 90px;
+  text-align: center;
+  flex: 0 0 auto;
+  min-width: 150px; /* Adjusted size */
+  margin-right: 1rem; /* Reduced space between items */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.category img {
+  padding: 0rem;
+  max-width: 80%;
+  height: 90px;
+  border-radius: 400%;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 0rem; /* Adjust gap for smaller items */
+}
+
+.rating span {
+  color: #ffd700;
+  font-size: 1rem; /* Smaller font size for stars */
+}
+
+.rating .filled {
+  color: #ffd700;
+}
+
+.rating span:not(.filled) {
+  color: #ccc;
+}
+
+.arrow {
+  background-color: #fff;
+  border: 2px solid var(--shamrock-green);
+  border-radius: 50%;
+  font-size: 1.5rem; /* Adjusted font size */
+  width: 40px; /* Adjusted size */
+  height: 40px; /* Adjusted size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--shamrock-green);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* Ensure buttons are above carousel */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.arrow:hover {
+  background-color: var(--shamrock-green);
+  color: #fff;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}

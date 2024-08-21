@@ -1,0 +1,84 @@
+/* Mainbody.css */
+
+/* General Styles */
+.main-body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/033/027/497/large_2x/flat-lay-vegetables-on-white-background-food-and-diet-concept-ai-generated-free-photo.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .main-heading {
+    display: flex;
+    justify-content: left;
+    font-family: 'Trebuchet MS';
+    padding-top: 240px;
+    font-size: 70px;
+    padding-left: 200px;
+    color: black;
+  }
+  
+  .description {
+    justify-content: center;
+    font-family: 'Trebuchet MS';
+    align-content: center;
+    margin: 25px;
+    padding-left: 180px;
+    font-size: 25px;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .shop-button {
+    font-size: 25px;
+    border-radius: 5px;
+    margin: 5px;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    margin-top: 20px;
+    background-color: green;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .main-heading {
+      padding-top: 120px;
+      padding-left: 50px;
+      font-size: 50px;
+      text-align: center;
+    }
+  
+    .description {
+      padding-left: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .shop-button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-heading {
+      padding-top: 60px;
+      padding-left: 20px;
+      font-size: 35px;
+    }
+  
+    .description {
+      padding-left: 10px;
+      font-size: 18px;
+    }
+  
+    .shop-button {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+  
